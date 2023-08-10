@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #2e2865;
+  --div-color: #f6f4ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/587958/pexels-photo-587958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  opacity: 0.8;
+  height: fit-content;
+  width: fit-content;
+  background-color: #fafafc;
+  padding: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.exit {
+  display: flex;
+  justify-content: end;
+}
+
+.exit div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgb(222, 222, 222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+}
+
+.header {
+  width: 60%;
+  margin: 0 auto 1.5rem;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.subscribe > input {
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  outline: none;
+  border: 1px solid #59529a8a;
+  margin-bottom: 1rem;
+}
+
+.subscribe__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.subscribe__checkbox input {
+  align-self: flex-start;
+  transform: scale(1.2);
+  accent-color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  padding: 0.9rem 1.5rem;
+  color: white;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 3px 0 #aea7f0aa;
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+}
+
+button:hover {
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+}
